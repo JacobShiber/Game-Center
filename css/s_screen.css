@@ -17,6 +17,7 @@
     height: 100%;
     position: fixed;
     z-index: -100;
+    top: 0;
     filter: brightness(70%);
 }
 
@@ -75,7 +76,7 @@ header #logotext {
     width: var(--section_w);
     height: 230px;
     margin-left: 5%;
-    margin-top: 135px;
+    margin-top: 150px;
     background: whitesmoke;
     opacity: 0.9;
 }
@@ -188,7 +189,7 @@ header #logotext {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 
@@ -225,7 +226,6 @@ header #logotext {
     bottom: 0;
     width: 100%;
     align-items: center;
-    margin-top: 50px;
 }
 
 #footerlinks li {
