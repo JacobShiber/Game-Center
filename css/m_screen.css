@@ -77,9 +77,10 @@ header #logoimg {
 header #logotext {
     color: whitesmoke;
     font-family: psfont;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 5px;
-    margin-left: 25%;
+    margin-left: 17.5%;
+    margin-top: 5%;
 }
 main {
     margin-left: 25%;
@@ -241,9 +242,11 @@ main {
     font-size: 30px;
     font-family: var(--textfont);
     list-style-type: none;
+    margin-left: 20%;
 }
 
 #footerlinks li a {
     color: whitesmoke;
     text-decoration: none;
 }
+
