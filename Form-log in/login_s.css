@@ -76,7 +76,7 @@ header #logotext {
     width: 90%;
     height: 600px;
     margin-left: 5%;
-    background: rgb(37, 37, 37);
+    background: rgb(173, 56, 56);
     opacity: 0.9;
     margin-top: 50%;
     display: flex;
@@ -93,6 +93,7 @@ header #logotext {
     font-size: 30px;
     align-content: space-around;
     font-family: var(--textfont);
+    color: whitesmoke;
 }
 
 #checkbox {
