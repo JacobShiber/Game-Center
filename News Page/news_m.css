@@ -11,6 +11,7 @@
 :root {
     --textfont: 'Lato', sans-serif;
     --section_w : 90%;
+    --m_section_w : 73vw;
 }
 #bggif {
 
@@ -22,35 +23,42 @@
 }
 
 #mainlogo {
-    max-height: 20%;
-    max-width: 100vw;
+    max-height: 100%;
+    max-width: 23%;
     background: rgb(173, 56, 56);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     position: fixed;
+    right: initial;
+    left: 0;
     top: 0;
     z-index: 100;
 }
 
+
 nav {
+    height: 100vh;
     width: 100%;
 }
 
 
 #navlinks {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    flex-direction: column;
+    height: 60%;
+    background: rgb(36, 36, 36, 0.5);
+    margin-top: 25%;
 }
 
 #navlinks li {
     list-style-type: none;
-    font-size: 25px;
+    font-size: 35px;
     font-family: var(--textfont);
-    box-sizing: content-box;
+    font-weight: bolder;
+    width: 60%;
+    overflow: auto;
+    margin-top: 50%;
+    margin-left: 2.5%;
 }
 
 #navlinks li a {
@@ -60,33 +68,40 @@ nav {
 
 
 header #logoimg {
-    width: 10%;
-    height: 20%;
+    width: 50%;
+    height: 15%;
     margin-top: 5px;
+    margin-left: 20%;
 }
 
 header #logotext {
     color: whitesmoke;
     font-family: psfont;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 5px;
+    margin-left: 17.5%;
+    margin-top: 5%;
+}
+main {
+    margin-left: 25%;
 }
 
-#recheader {
+#newsheader {
     font-family: psfont;
     color: whitesmoke;
-    margin-top: 175px;
+    margin-top: 10%;
     margin-left: 5%;
+    font-size: 45px;
 }
 
-#reccontent {
+#nbanews {
     width: var(--section_w);
-    height: 1000px;
+    height: 1200px;
     margin-left: 5%;
-    margin-top: 50px;
+    margin-top: 5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.8; */
-    margin-bottom: 100px;
+    /* opacity: 0.9; */
+    margin-bottom: 150px;
 }
 
 #sectionheader {
@@ -94,14 +109,15 @@ header #logotext {
     font-family: var(--textfont);
     font-weight: bolder;
     margin-left: 1%;
+    font-size: 45px;
 }
 
-#reccontent img {
+#nbanews img {
     width: 100%;
     margin-top: 5%;
 }
 
-#rectext {
+#newstext {
     width: 100%;
     margin-top: 5%;
     font-family: var(--textfont);
@@ -109,22 +125,6 @@ header #logotext {
     font-weight: bolder;
 }
 
-#loadoutlist {
-    width: 100%;
-    margin-left: 7.5%;
-}
-
-#loadoutlist li {
-    font-size: 20px;
-    font-family: var(--textfont);
-    font-weight: bolder;
-}
-
-#reccontent h2 {
-    font-family: var(--textfont);
-    font-weight: bolder;
-    margin-left: 1%;
-}
 
 #footerlinks {
     height: 7%;
@@ -141,9 +141,11 @@ header #logotext {
     font-size: 30px;
     font-family: var(--textfont);
     list-style-type: none;
+    margin-left: 20%;
 }
 
 #footerlinks li a {
     color: whitesmoke;
     text-decoration: none;
 }
+

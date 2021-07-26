@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    src: url(./Fonts/EmotionEngine-8ynA.ttf.ttf);
+    src: url(../css/Fonts/EmotionEngine-8ynA.ttf.ttf);
     font-family: psfont;
 }
 
@@ -86,145 +86,59 @@ main {
     margin-left: 25%;
 }
 
-#description {
-    width: var(--m_section_w);
-    height: 230px;
-    margin-top: 5%;
-    background: whitesmoke;
-    opacity: 0.9;
-}
-#descriptiontext {
-    padding: 5px;
-    font-size: 30px;
-    font-family: var(--textfont);
-    height: 220px;
-    overflow: scroll;
-}
-
-#gamesoftheweek {
-    width: var(--m_section_w);
-    height: 1200px;
-    margin-top: 2.5%;
-    background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sectionheader {
-    font-family: var(--textfont);
-    text-decoration: underline;
-    margin-left: 5%;
-    margin-top: 2.5%;
-}
-
-.games {
-   width: 90%;
-   height: 25%;
-   margin: 5%;
-}
-
-.games img {
-    height: 100%;
-    width: 100%;
-}
-
-.gameinfo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background: black;
-    height: 15%;
-}
-
-@media screen and (max-width: 375px) {
-    .gameinfo {
-        height: 15%;
-        overflow: scroll;
-    }
-}
-
-.gameinfo li {
-    list-style-type: none;
+#recheader {
+    font-family: psfont;
     color: whitesmoke;
-    font-family: var(--textfont);
-    font-size: 115%;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 45px;
 }
 
-#gamenews {
-    width: var(--m_section_w);
-    height: 750px;
-    margin-top: 2.5%;
+#reccontent {
+    width: var(--section_w);
+    height: 1000px;
+    margin-left: 5%;
+    margin-top: 5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-between;
+    /* opacity: 0.8; */
+    margin-bottom: 150px;
 }
 
-
-#news {
-    width: 90%;
-    margin: 5%;
-}
-
-#news img {
-    width: 100%;
-}
-
-#news h1 {
+#sectionheader {
     text-decoration: underline;
     font-family: var(--textfont);
     font-weight: bolder;
+    margin-left: 1%;
 }
 
-#news p {
-    height: 180px;
-    font-size: 25px;
-    margin-top: 5px;
-    font-family: var(--textfont);
-    font-weight: bolder;
-    overflow: scroll;
-}
-
-#recommended {
-    width: var(--m_section_w);
-    height: 550px;
-    margin-top: 2.5%;
-    background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-between;
-    margin-bottom: 100px;
-}
-
-
-#recommended1 {
-    width: 90%;
-    margin: 5%;
-}
-
-#recommended1 img {
+#reccontent img {
     width: 100%;
+    margin-top: 5%;
 }
 
-#recommended1 h1 {
-    text-decoration: underline;
-    font-family: var(--textfont);
-    font-weight: bolder;
-}
-
-#recommended1 p {
-    height: 100px;
-    font-size: 25px;
-    margin-top: 5px;
-    font-family: var(--textfont);
-    font-weight: bolder;
-    overflow: scroll;
+#rectext {
     width: 100%;
+    margin-top: 5%;
+    font-family: var(--textfont);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#loadoutlist {
+    width: 100%;
+    margin-left: 7.5%;
+}
+
+#loadoutlist li {
+    font-size: 20px;
+    font-family: var(--textfont);
+    font-weight: bolder;
+}
+
+#reccontent h2 {
+    font-family: var(--textfont);
+    font-weight: bolder;
+    margin-left: 1%;
 }
 
 #footerlinks {

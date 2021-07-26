@@ -11,6 +11,7 @@
 :root {
     --textfont: 'Lato', sans-serif;
     --section_w : 90%;
+    --m_section_w : 73vw;
 }
 #bggif {
 
@@ -22,35 +23,42 @@
 }
 
 #mainlogo {
-    max-height: 20%;
-    max-width: 100vw;
+    max-height: 100%;
+    max-width: 23%;
     background: rgb(173, 56, 56);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     position: fixed;
+    right: initial;
+    left: 0;
     top: 0;
     z-index: 100;
 }
 
+
 nav {
+    height: 100vh;
     width: 100%;
 }
 
 
 #navlinks {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    flex-direction: column;
+    height: 60%;
+    background: rgb(36, 36, 36, 0.5);
+    margin-top: 25%;
 }
 
 #navlinks li {
     list-style-type: none;
-    font-size: 25px;
+    font-size: 35px;
     font-family: var(--textfont);
-    box-sizing: content-box;
+    font-weight: bolder;
+    width: 60%;
+    overflow: auto;
+    margin-top: 50%;
+    margin-left: 2.5%;
 }
 
 #navlinks li a {
@@ -60,70 +68,59 @@ nav {
 
 
 header #logoimg {
-    width: 10%;
-    height: 20%;
+    width: 50%;
+    height: 15%;
     margin-top: 5px;
+    margin-left: 20%;
 }
 
 header #logotext {
     color: whitesmoke;
     font-family: psfont;
-    font-size: 35px;
-    margin-bottom: 5px;
-}
-
-#recheader {
-    font-family: psfont;
-    color: whitesmoke;
-    margin-top: 175px;
-    margin-left: 5%;
-}
-
-#reccontent {
-    width: var(--section_w);
-    height: 1000px;
-    margin-left: 5%;
-    margin-top: 50px;
-    background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.8; */
-    margin-bottom: 100px;
-}
-
-#sectionheader {
-    text-decoration: underline;
-    font-family: var(--textfont);
-    font-weight: bolder;
-    margin-left: 1%;
-}
-
-#reccontent img {
-    width: 100%;
-    margin-top: 5%;
-}
-
-#rectext {
-    width: 100%;
-    margin-top: 5%;
-    font-family: var(--textfont);
     font-size: 25px;
-    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-left: 17.5%;
+    margin-top: 5%;
+}
+main {
+    margin-left: 25%;
 }
 
-#loadoutlist {
+#formcontainer {
+    width: 90%;
+    height: 700px;
+    margin-left: 5%;
+    background: rgb(173, 56, 56);
+    opacity: 0.9;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#signupform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
-    margin-left: 7.5%;
+    align-items: center;
+    font-size: 30px;
+    align-content: space-around;
+    font-family: var(--textfont);
+    color: whitesmoke;
 }
 
-#loadoutlist li {
-    font-size: 20px;
-    font-family: var(--textfont);
-    font-weight: bolder;
+#checkbox {
+    margin-bottom: 2%;
 }
 
-#reccontent h2 {
-    font-family: var(--textfont);
-    font-weight: bolder;
-    margin-left: 1%;
+#submit {
+    margin-top: 15%;
+}
+
+.forminputs {
+    width: 60%;
+    height: 25px;
 }
 
 #footerlinks {
@@ -141,9 +138,11 @@ header #logotext {
     font-size: 30px;
     font-family: var(--textfont);
     list-style-type: none;
+    margin-left: 20%;
 }
 
 #footerlinks li a {
     color: whitesmoke;
     text-decoration: none;
 }
+
