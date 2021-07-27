@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(../css/Fonts/EmotionEngine-8ynA.ttf.ttf);
+    font-family: psfont;
+}
+
+:root {
+    --textfont: 'Lato', sans-serif;
+    --section_w : 90%;
+    --m_section_w : 73vw;
+    --l_section_w : 95%;
+}
+#bggif {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    filter: brightness(70%);
+}
+
+#mainlogo {
+    max-height: 100%;
+    max-width: 23%;
+    background: rgb(173, 56, 56);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: initial;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
+nav {
+    height: 100vh;
+    width: 100%;
+}
+
+
+#navlinks {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background: rgb(36, 36, 36, 0.5);
+    margin-top: 15%;
+}
+
+#navlinks li {
+    list-style-type: none;
+    font-size: 40px;
+    font-family: var(--textfont);
+    font-weight: bolder;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    /* margin-top: 25%; */
+    margin-left: 2.5%;
+}
+
+#navlinks li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+header #logoimg {
+    width: 50%;
+    height: 15%;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+
+header #logotext {
+    color: whitesmoke;
+    font-family: psfont;
+    font-size: 45px;
+    margin-bottom: 5px;
+    margin-left: 17.5%;
+    margin-top: 5%;
+}
+main {
+    margin-left: 25%;
+}
+
+#formcontainer {
+    width: 80%;
+    height: 1000px;
+    margin-left: 10%;
+    background: rgb(173, 56, 56);
+    opacity: 0.9;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#signupform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 40px;
+    align-content: space-around;
+    font-family: var(--textfont);
+    color: whitesmoke;
+}
+
+#checkbox {
+    margin-bottom: 2%;
+}
+
+#submit {
+    margin-top: 15%;
+}
+
+.forminputs {
+    width: 60%;
+    height: 25px;
+}
+
+#footerlinks {
+    height: 7%;
+    background: rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 23%;
+    align-items: center;
+    z-index: 400;
+}
+
+#footerlinks li {
+    font-size: 30px;
+    font-family: var(--textfont);
+    list-style-type: none;
+}
+
+#footerlinks li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1156px ) {
+    #navlinks li {
+        list-style-type: none;
+        font-size: 28px;
+        font-family: var(--textfont);
+        font-weight: bolder;
+        width: 80%;
+        height: 100%;
+        overflow: auto;
+        /* margin-top: 25%; */
+        margin-left: 2.5%;
+    }
+}
