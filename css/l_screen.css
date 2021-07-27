@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(./Fonts/EmotionEngine-8ynA.ttf.ttf);
+    font-family: psfont;
+}
+
+:root {
+    --textfont: 'Lato', sans-serif;
+    --section_w : 90%;
+    --m_section_w : 73vw;
+    --l_section_w : 95%;
+}
+#bggif {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    filter: brightness(70%);
+}
+
+#mainlogo {
+    max-height: 100%;
+    max-width: 23%;
+    background: rgb(173, 56, 56);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: initial;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
+nav {
+    height: 100vh;
+    width: 100%;
+}
+
+
+#navlinks {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background: rgb(36, 36, 36, 0.5);
+    margin-top: 15%;
+}
+
+#navlinks li {
+    list-style-type: none;
+    font-size: 40px;
+    font-family: var(--textfont);
+    font-weight: bolder;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    /* margin-top: 25%; */
+    margin-left: 2.5%;
+}
+
+#navlinks li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+header #logoimg {
+    width: 50%;
+    height: 15%;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+
+header #logotext {
+    color: whitesmoke;
+    font-family: psfont;
+    font-size: 45px;
+    margin-bottom: 5px;
+    margin-left: 17.5%;
+    margin-top: 5%;
+}
+main {
+    margin-left: 25%;
+}
+
+#description {
+    width: var(--l_section_w);
+    height: 230px;
+    margin-top: 5%;
+    background: whitesmoke;
+    opacity: 0.9;
+}
+#descriptiontext {
+    padding: 5px;
+    font-size: 45px;
+    font-family: var(--textfont);
+    height: 220px;
+    overflow: scroll;
+}
+
+#gamesoftheweek {
+    width: var(--l_section_w);
+    height: 1200px;
+    margin-top: 2.5%;
+    background: rgb(245, 245, 245, 0.8);
+    /* opacity: 0.9; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.sectionheader {
+    font-family: var(--textfont);
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    font-size: 55px;
+}
+
+.games {
+   width: 90%;
+   height: 25%;
+   margin: 3%;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.games img {
+    height: 100%;
+    width: 55%;
+}
+
+.gameinfo {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: black;
+    height: 100%;
+    width: 0%;
+    font-size: 35px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.games img:hover + .gameinfo {
+    width: 50%;
+}
+
+@media screen and (max-width: 375px) {
+    .gameinfo {
+        height: 15%;
+        overflow: scroll;
+    }
+}
+
+.gameinfo li {
+    list-style-type: square white;
+    color: whitesmoke;
+    font-family: var(--textfont);
+    font-size: 80%;
+    margin-left: 15%;
+}
+
+#gamenews {
+    width: var(--l_section_w);
+    height: 550px;
+    margin-top: 2.5%;
+    background: rgb(245, 245, 245, 0.8);
+    /* opacity: 0.9; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-content: space-between;
+}
+
+
+#news {
+    width: 90%;
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'pic header header'
+    'pic text text';
+    column-gap: 2.5%;
+    row-gap: -25px;
+    margin-bottom: 20%;
+    height: 70%;
+}
+
+#news img {
+    width: 100%;
+    height: 100%;
+    grid-area: pic;
+}
+
+#news h1 {
+    text-decoration: underline;
+    font-family: var(--textfont);
+    font-weight: bolder;
+    font-size: 50px;
+    width: 100%;
+    /* grid-area: header; */
+}
+
+#news p {
+    width: 100%;
+    font-size: 35px;
+    /* margin-top: 5px; */
+    /* margin-top: -75%; */
+    font-family: var(--textfont);
+    font-weight: bolder;
+    overflow: scroll;
+    grid-area: text;
+    height: 220px;
+    margin-bottom: 20%;
+    grid-area: text;
+}
+
+#recommended {
+    width: var(--l_section_w);
+    height: 550px;
+    margin-top: 2.5%;
+    background: rgb(245, 245, 245, 0.8);
+    /* opacity: 0.9; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* align-content: space-between; */
+    margin-bottom: 100px;
+}
+
+
+#recommended1 {
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: '50% 25%'
+    '50% 25%';
+    grid-template-areas: 'pic header header'
+    'pic text text';
+    column-gap: 2.5%;
+}
+
+#recommended1 img {
+    width: 100%;
+    grid-area: pic;
+}
+
+#recommended1 h1 {
+    text-decoration: underline;
+    font-family: var(--textfont);
+    font-weight: bolder;
+    width: 100%;
+    font-size: 50px;
+}
+
+#recommended1 p {
+    /* height: 100px; */
+    font-size: 35px;
+    margin-top: 5px;
+    font-family: var(--textfont);
+    font-weight: bolder;
+    overflow: scroll;
+    width: 100%;
+    grid-area: text;
+}
+
+#footerlinks {
+    height: 7%;
+    background: rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 23%;
+    align-items: center;
+    z-index: 400;
+}
+
+#footerlinks li {
+    font-size: 30px;
+    font-family: var(--textfont);
+    list-style-type: none;
+}
+
+#footerlinks li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1156px ) {
+    #descriptiontext {
+        padding: 5px;
+        font-size: 38px;
+        font-family: var(--textfont);
+        height: 220px;
+        overflow: scroll;
+    }
+    #news h1 {
+        text-decoration: underline;
+        font-family: var(--textfont);
+        font-weight: bolder;
+        font-size: 38px;
+        width: 100%;
+        /* grid-area: header; */
+    }
+    #recommended1 h1 {
+        text-decoration: underline;
+        font-family: var(--textfont);
+        font-weight: bolder;
+        width: 100%;
+        font-size: 38px;
+    }
+    #navlinks li {
+        list-style-type: none;
+        font-size: 28px;
+        font-family: var(--textfont);
+        font-weight: bolder;
+        width: 80%;
+        height: 100%;
+        overflow: auto;
+        /* margin-top: 25%; */
+        margin-left: 2.5%;
+    }
+    
+}
