@@ -25,7 +25,7 @@
 
 #mainlogo {
     max-height: 100%;
-    max-width: 23%;
+    max-width: 15%;
     background: rgb(173, 56, 56);
     display: flex;
     flex-direction: column;
@@ -53,13 +53,12 @@ nav {
 
 #navlinks li {
     list-style-type: none;
-    font-size: 40px;
+    font-size: 25px;
     font-family: var(--textfont);
     font-weight: bolder;
     width: 80%;
     height: 100%;
     overflow: auto;
-    /* margin-top: 25%; */
     margin-left: 2.5%;
 }
 
@@ -70,22 +69,22 @@ nav {
 
 
 header #logoimg {
-    width: 50%;
+    width: 35%;
     height: 15%;
     margin-top: 5px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 header #logotext {
     color: whitesmoke;
     font-family: psfont;
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 5px;
-    margin-left: 17.5%;
+    margin-left: 25%;
     margin-top: 5%;
 }
 main {
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 #description {
@@ -97,10 +96,9 @@ main {
 }
 #descriptiontext {
     padding: 5px;
-    font-size: 45px;
+    font-size: 44.5px;
     font-family: var(--textfont);
     height: 220px;
-    overflow: scroll;
 }
 
 #gamesoftheweek {
@@ -108,18 +106,16 @@ main {
     height: 1200px;
     margin-top: 2.5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
 .sectionheader {
     font-family: var(--textfont);
     text-decoration: underline;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 2.5%;
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .games {
@@ -138,7 +134,6 @@ main {
 
 .gameinfo {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: space-evenly;
     background: black;
@@ -153,12 +148,6 @@ main {
     width: 50%;
 }
 
-@media screen and (max-width: 375px) {
-    .gameinfo {
-        height: 15%;
-        overflow: scroll;
-    }
-}
 
 .gameinfo li {
     list-style-type: square white;
@@ -173,10 +162,8 @@ main {
     height: 550px;
     margin-top: 2.5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     align-content: space-between;
 }
 
@@ -206,19 +193,15 @@ main {
     text-decoration: underline;
     font-family: var(--textfont);
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 45px;
     width: 100%;
-    /* grid-area: header; */
 }
 
 #news p {
     width: 100%;
-    font-size: 35px;
-    /* margin-top: 5px; */
-    /* margin-top: -75%; */
+    font-size: 25px;
     font-family: var(--textfont);
     font-weight: bolder;
-    overflow: scroll;
     grid-area: text;
     height: 220px;
     margin-bottom: 20%;
@@ -230,11 +213,8 @@ main {
     height: 550px;
     margin-top: 2.5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
-    /* align-content: space-between; */
     margin-bottom: 100px;
 }
 
@@ -261,16 +241,14 @@ main {
     font-family: var(--textfont);
     font-weight: bolder;
     width: 100%;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 #recommended1 p {
-    /* height: 100px; */
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 5px;
     font-family: var(--textfont);
     font-weight: bolder;
-    overflow: scroll;
     width: 100%;
     grid-area: text;
 }
@@ -282,13 +260,13 @@ main {
     justify-content: space-evenly;
     position: fixed;
     bottom: 0;
-    width: 23%;
+    width: 15%;
     align-items: center;
     z-index: 400;
 }
 
 #footerlinks li {
-    font-size: 30px;
+    font-size: 20px;
     font-family: var(--textfont);
     list-style-type: none;
 }
@@ -329,7 +307,6 @@ main {
         width: 80%;
         height: 100%;
         overflow: auto;
-        /* margin-top: 25%; */
         margin-left: 2.5%;
     }
     

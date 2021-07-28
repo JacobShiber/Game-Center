@@ -25,7 +25,7 @@
 
 #mainlogo {
     max-height: 100%;
-    max-width: 23%;
+    max-width: 15%;
     background: rgb(173, 56, 56);
     display: flex;
     flex-direction: column;
@@ -53,13 +53,12 @@ nav {
 
 #navlinks li {
     list-style-type: none;
-    font-size: 40px;
+    font-size: 25px;
     font-family: var(--textfont);
     font-weight: bolder;
     width: 80%;
     height: 100%;
     overflow: auto;
-    /* margin-top: 25%; */
     margin-left: 2.5%;
 }
 
@@ -70,22 +69,22 @@ nav {
 
 
 header #logoimg {
-    width: 50%;
+    width: 35%;
     height: 15%;
     margin-top: 5px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 header #logotext {
     color: whitesmoke;
     font-family: psfont;
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 5px;
-    margin-left: 17.5%;
+    margin-left: 25%;
     margin-top: 5%;
 }
 main {
-    margin-left: 25%;
+    margin-left: 15%;
 }
 
 #newsheader {
@@ -102,16 +101,15 @@ main {
     margin-left: 5%;
     margin-top: 5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
-    /* margin-bottom: 400px; */
 }
 
 #sectionheader {
     text-decoration: underline;
     font-family: var(--textfont);
     font-weight: bolder;
-    margin-left: 1%;
-    font-size: 45px;
+    margin-left: 5%;
+    padding-top: 2.5%;
+    font-size: 35px;
 }
 
 #nbanews img {
@@ -136,13 +134,13 @@ main {
     justify-content: space-evenly;
     position: fixed;
     bottom: 0;
-    width: 23%;
+    width: 15%;
     align-items: center;
     z-index: 400;
 }
 
 #footerlinks li {
-    font-size: 30px;
+    font-size: 20px;
     font-family: var(--textfont);
     list-style-type: none;
 }
@@ -166,7 +164,6 @@ main {
         font-weight: bolder;
         font-size: 38px;
         width: 100%;
-        /* grid-area: header; */
     }
     #recommended1 h1 {
         text-decoration: underline;
@@ -183,7 +180,6 @@ main {
         width: 80%;
         height: 100%;
         overflow: auto;
-        /* margin-top: 25%; */
         margin-left: 2.5%;
     }
     
