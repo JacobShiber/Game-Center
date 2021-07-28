@@ -106,7 +106,6 @@ main {
     height: 1200px;
     margin-top: 2.5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -193,7 +192,6 @@ main {
     height: 550px;
     margin-top: 2.5%;
     background: rgb(245, 245, 245, 0.8);
-    /* opacity: 0.9; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

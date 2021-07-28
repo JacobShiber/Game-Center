@@ -135,7 +135,6 @@ header #logotext {
 .gameinfo li {
     list-style-type: none;
     color: whitesmoke;
-    /* font-size: 18px; */
     font-family: var(--textfont);
     font-size: 115%;
 }
